@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div id="mobile-menu" class="mobile-main-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#carousel">Bestsellers</a></li>
+            <li><a href="#search-btn">Find</a></li>
+            <li><a href="#view-favourite-btn">Favourites</a></li>
+        </ul>
+    </div>
+    <header class="header">
+        <img src="logo.png" alt="" class="logo" />
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="#home" id="homebutton" class="navbar-link">Home</a></li>
+                <li><a href="#carousel" id="contactbutton" class="navbar-link">Bestsellers</a></li>
+                <li><a href="#search-btn" id="findbutton" class="navbar-link">Find</a></li>
+                <li><a href="#view-favourite-btn" id="favouritesbutton" class="navbar-link">Favourites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <button id="menu-btn" class="hamburger" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+    </button>
+
+    <div class="first-div">
+        <div class="home-pic" id="home">
+            <img src="home.jpeg" alt="">
+        </div>
+        <img src="person.webp" alt="">
+        <div class="first-text" id="home-text">
+            <span class="home-text">Finding books is now easy !!</span>
+            <button class="home-search">Search</button>
+        </div>
+    </div>
+
+    <div class="carousel" id="carousel">
+        <div class="carousel-slide">
+            <img src="./carousel/81gOJoEgVoL._AC_UF1000,1000_QL80_.jpg" />
+            <img src="./carousel/81YvqjX4AdL._AC_UF1000,1000_QL80_.jpg" />
+            <img src="./carousel/81zeKRGCPpL._AC_UF1000,1000_QL80_.jpg" />
+            <img src="./carousel/29656777588766.jpg" />
+            <img src="./carousel/Deathly_Hallows_New_Cover.webp" />
+            <img src="./carousel/51n7uF9FfxL.jpg" />
+            <img src="./carousel/55_3527_0_HarryPotterandtheOrderofthePho.jpg.jxl" />
+            <img src="./carousel/harry-potter-and-the-cursed-child-part-8-original-imagdf8gb2xvhfgz.jpeg.webp">
+        </div>
+    </div>
+
+    <div class="second-div">
+        <input type="text" class="search-box" id="author" placeholder="Author">
+        <input type="text" class="search-box" id="title" placeholder="Title">
+        <button class="btn" id="search-btn">Search</button>
+        <button class="btn" id="view-favourite-btn">View Favourites</button>
+    </div>
+
+    <div class="grid" id="books_collection"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
